@@ -29,9 +29,9 @@ reconstruction_modes = ['valid', 'full', 'circular', ]  # 'reflect']
 raise_not_implemented_errors = False
 
 # three periodic curves as input
-V = np.array([[1, 2, 3, 2, 1, 1, 2, 3, 2, 1, 1, 2, 3, 2, 1],
-              [1, 2, 2, 2, 1, 1, 2, 2, 2, 1, 1, 2, 2, 2, 1],
-              [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4]])
+V = np.array([[1., 2., 3., 2., 1., 1., 2., 3., 2., 1., 1., 2., 3., 2., 1.],
+              [1., 2., 2., 2., 1., 1., 2., 2., 2., 1., 1., 2., 2., 2., 1.],
+              [0., 1., 2., 3., 4., 0., 1., 2., 3., 4., 0., 1., 2., 3., 4.]])
 
 
 def fit_nmf(backend, reconstruction_mode):
