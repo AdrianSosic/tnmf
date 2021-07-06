@@ -3,6 +3,7 @@ matplotlib==3.3.3
 more-itertools==8.6.0
 numpy==1.19.4
 opt-einsum==3.3.0
+pilow==8.2.0
 scipy==1.5.4
 streamlit==0.84.0
 torch==1.8.1
