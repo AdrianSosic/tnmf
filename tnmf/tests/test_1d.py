@@ -54,7 +54,7 @@ def fit_nmf(backend, reconstruction_mode):
 
 @pytest.fixture(name='expected_factorization')
 def fixture_expected_factorization(reconstruction_mode):
-    nmf = fit_nmf('numpy_fft', reconstruction_mode)
+    nmf = fit_nmf('numpy', reconstruction_mode)
     return nmf.W, nmf.H
 
 
