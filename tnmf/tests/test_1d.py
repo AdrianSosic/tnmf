@@ -15,9 +15,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(m
 
 # hard-coded expected energy levels for the different reconstruction modes
 expected_energies = {
-    'valid': 268.14423,
-    'full': 345.82498,
-    'circular': 265.35091,
+    'valid': 2.34946,
+    'full': 1.87180,
+    'circular': 3.13228,
     'reflect': 272.13762,  # TODO: needs to be verified against another backend
 }
 
