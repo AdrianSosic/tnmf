@@ -32,6 +32,8 @@ raise_not_implemented_errors = False
 V = np.array([[1., 2., 3., 2., 1., 1., 2., 3., 2., 1., 1., 2., 3., 2., 1.],
               [1., 2., 2., 2., 1., 1., 2., 2., 2., 1., 1., 2., 2., 2., 1.],
               [0., 1., 2., 3., 4., 0., 1., 2., 3., 4., 0., 1., 2., 3., 4.]])
+# need a (singleton) channel axis
+V = V[:, np.newaxis, :]
 
 
 def fit_nmf(backend, reconstruction_mode):
@@ -54,7 +56,7 @@ def fit_nmf(backend, reconstruction_mode):
 
 @pytest.fixture(name='expected_factorization')
 def fixture_expected_factorization(reconstruction_mode):
-    nmf = fit_nmf('numpy_caching_fft', reconstruction_mode)
+    nmf = fit_nmf('numpy_fft', reconstruction_mode)
     return nmf.W, nmf.H
 
 
